@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Karthik M | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      min-height: 100vh;
+      flex-direction: row;
+    }
+
+    nav {
+      width: 20%;
+      min-height: 100vh;
+      background-color: #000;
+      color: white;
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: fixed;
+      left: 0;
+      top: 0;
+    }
+
+    nav h1 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #00ffc8;
+    }
+
+    nav a {
+      display: block;
+      color: #fff;
+      margin: 15px 0;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+
+    nav a:hover {
+      color: #00ffc8;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    .main-content {
+      margin-left: 20%;
+      width: 80%;
+      min-height: 100vh;
+      background: url("assets/profile.jpg") no-repeat center center fixed;
+      background-size: cover;
+      padding: 60px 40px;
+      overflow-y: auto;
+    }
+
+    section {
+      min-height: 100vh;
+      padding: 40px;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #00ffc8;
+    }
+
+    p, ul {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    #typing-text {
+      color: #00ffc8;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    #cursor {
+      color: #00ffc8;
+      font-size: 2rem;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      nav {
+        width: 25%;
+      }
+
+      .main-content {
+        margin-left: 25%;
+        width: 75%;
+        padding: 40px 20px;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      p, ul {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      nav {
+        position: relative;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+      }
+
+      nav div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+      }
+
+      nav a {
+        margin: 5px 10px;
+        font-size: 0.9rem;
+        padding: 4px 8px;
+        background-color: rgba(255, 255, 255, 0.05);
+        border-radius: 4px;
+      }
+
+      nav a:hover {
+        background-color: #00ffc8;
+        color: #000;
+      }
+
+      nav h1 {
+        font-size: 1.2rem;
+        width: 100%;
+      }
+
+      .main-content {
+        margin-left: 0;
+        width: 100%;
+        padding: 20px;
+        background-attachment: scroll;
+      }
+
+      section {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <nav>
+    <div>
+      <h1>Karthik M</h1>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="resume.pdf" id="resumebtn" target="_blank" style="margin-top: 20px; color: #00ffc8; font-weight: bold;">📄 Resume</a>
+    </div>
+    <footer>© 2025 Karthik M</footer>
+  </nav>
+
+  <!-- Right Content -->
+  <div class="main-content">
+
+    <!-- HOME -->
+    <section id="home">
+      <h2><span id="typing-text"></span><span id="cursor">|</span></h2>
+      <p>
+        I’m <strong>Karthik M</strong>, a final year B.Tech IT student at <strong>SKCT</strong>, deeply passionate about building responsive, scalable, and impactful digital solutions.
+      </p>
+      <p>
+        My expertise lies in <strong>Full Stack Web Development</strong>, with experience in both frontend and backend technologies. I turn ideas into reality using clean UI design and robust backend logic.
+      </p>
+      <p>
+        I’ve created real-world projects like <strong>Blood Beat</strong> and an <strong>Immersive Learning Tool</strong> for children with ASD/ID featured in <strong>Smart India Hackathon</strong>.
+      </p>
+      <p>
+        Let’s collaborate and build something meaningful! 💡🚀
+      </p>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I’m <strong>Karthik M</strong> from Tamil Nadu, currently pursuing my final year in B.Tech Information Technology at <strong>SKCT</strong>. I believe in creating solutions that blend innovation with usability.
+      </p>
+      <p>
+        I’ve been a team leader in national-level hackathons, interned at reputed companies, and love collaborating on tech-based social impact solutions.
+      </p>
+      <p>
+        Beyond development, I constantly work on improving my communication, leadership, and analytical thinking skills.
+      </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>💻 <strong>Programming Languages:</strong> Java, JavaScript, C++</li>
+        <li>🌐 <strong>Frontend:</strong> HTML, CSS, JavaScript, React.js</li>
+        <li>🛠️ <strong>Backend:</strong> Java (Spring Boot), Node.js, MySQL</li>
+        <li>☁️ <strong>Currently Learning:</strong> AWS, Blockchain</li>
+        <li>🗣️ <strong>Soft Skills:</strong> Team Leadership, Problem Solving, Intermediate Communication</li>
+      </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div>
+        <h3>🩸 Blood Beat - Blood Donation Platform</h3>
+        <p>Real-time platform connecting donors and seekers across India with location-based filtering and alerts.</p>
+        <ul>
+          <li><strong>Tech Stack:</strong> HTML, CSS, JS, React, Spring Boot, MySQL</li>
+          <li><strong>Features:</strong> Donor/Seeker Login, Maps, Search Filters</li>
+        </ul>
+      </div><br>
+
+      <div>
+        <h3>🧠 Immersive Learning Tool – SIH 2023</h3>
+        <p>VR-based education tool for children with ASD/ID to enhance cognitive learning through interaction.</p>
+        <ul>
+          <li><strong>Tech Stack:</strong> Unity, Blender, Firebase, JS</li>
+          <li><strong>Outcome:</strong> Finalist in Smart India Hackathon 2023</li>
+        </ul>
+      </div><br>
+
+      <div>
+        <h3>💻 Personal Portfolio (This Site)</h3>
+        <p>Responsive personal website to showcase skills, projects, and resume. Built using internal CSS and JavaScript.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:karthikmkarthik001@gmail.com" style="color: #00ffc8;">karthikmkarthik001@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/11-karthik" style="color: #00ffc8;">github.com/11-karthik</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/karthikoff" style="color: #00ffc8;">linkedin.com/in/karthikoff</a></p>
+    </section>
+
+  </div>
+
+  <!-- Typing Effect JS -->
+  <script>
+    const text = "I'm Karthik M — Full Stack Developer";
+    const typingTarget = document.getElementById("typing-text");
+    const cursor = document.getElementById("cursor");
+    let index = 0;
+
+    function typeLetter() {
+      if (index < text.length) {
+        typingTarget.innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeLetter, 100);
+      }
+    }
+
+    typeLetter();
+    setInterval(() => {
+      cursor.style.opacity = (cursor.style.opacity === "0") ? "1" : "0";
+    }, 500);
+  </script>
+
+  <!-- Resume Button JS -->
+  <script>
+    const resumeButton = document.getElementById("resumebtn");
+
+    resumeButton.addEventListener("click", function () {
+      alert("Thanks for checking my resume! It will open in a new tab.");
+    });
+  </script>
+
+</body>
+</html>
